@@ -34,7 +34,7 @@
 #
 
 
-ROOTNAME=<last>_<first>_HW
+ROOTNAME=nguyen_kim_HW
 HW=3
 FOPTION=_main
 RUNOPTIONS="Prompt> "
@@ -45,10 +45,10 @@ DEPS =
 OBJ = $(ROOTNAME)$(HW)$(FOPTION).o
 
 %.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS) 
+	$(CC) -c -o $@ $< $(CFLAGS)
 
 $(ROOTNAME)$(HW)$(FOPTION): $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS) -l $(LIBS)
+	$(CC) -o $@ $^ $(CFLAGS) -1 $(LIBS)
 
 clean:
 	rm *.o $(ROOTNAME)$(HW)$(FOPTION)
